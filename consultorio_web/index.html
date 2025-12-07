@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Consultório Médico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Sistema de Consultório Médico</h1>
+
+    <div class="container">
+        <h2>Cadastro de Pacientes</h2>
+
+        <input id="nome" placeholder="Nome do paciente">
+        <input id="idade" placeholder="Idade">
+        <input id="telefone" placeholder="Telefone">
+        <button onclick="cadastrarPaciente()">Cadastrar Paciente</button>
+
+        <h3>Lista de Pacientes</h3>
+        <ul id="listaPacientes"></ul>
+
+        <hr>
+
+        <h2>Agendamento de Consultas</h2>
+
+        <select id="pacienteSelect"></select>
+        <input type="date" id="data">
+        <input type="time" id="hora">
+        <button onclick="agendarConsulta()">Agendar Consulta</button>
+
+        <h3>Consultas Agendadas</h3>
+        <ul id="listaConsultas"></ul>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
